@@ -1,0 +1,7 @@
+<div id="assistant-{{current|default_if_none:message.pk}}" class="chat-message-left pb-4">
+  <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
+    {% if message %}
+      {{message.content}}
+    {% endif %}
+  </div>
+</div>
